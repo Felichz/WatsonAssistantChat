@@ -1,4 +1,5 @@
 {
+  "homepage": "https://anderssonfelix.com/WatsonAssistant",
   "name": "chatbot",
   "version": "0.1.0",
   "private": true,
@@ -6,9 +7,15 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.20.0",
+    "materialize-css": "^1.0.0",
     "react": "^16.13.1",
+    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-materialize": "^3.9.3",
+    "react-scripts": "3.4.3",
+    "react-spinners": "^0.9.0",
+    "styled-components": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

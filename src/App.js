@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'materialize-css';
+import 'materialize-css/dist/css/materialize.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { GlobalStyles } from './GlobalStyles';
+import { Container } from './styles';
+import { ChatBox } from './containers/ChatBox';
+
+const App = () => {
+
+    return (
+        <>
+            <GlobalStyles />
+            <Container>
+                <ChatBox />
+            </Container>
+        </>
+    );
+};
 
 export default App;

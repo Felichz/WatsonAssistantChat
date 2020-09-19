@@ -7,7 +7,7 @@ export const GlobalStyles = createGlobalStyle`
 
     #root {
         display: flex;
-        min-height: 100vh;
+        height: 90vh;
         justify-content: center;
         align-items: center;
     }

@@ -26,7 +26,7 @@ export const ChatThread = ({ messages, onOptionResponse}) => {
     return (
         <ChatThreadContainer>
             <Pipe />
-            <Scrollbars style={{ height: '60vh' }} ref={scrollBoxRef}>
+            <Scrollbars style={{ height: '55vh' }} ref={scrollBoxRef}>
                 {messages.map((message, idx) => (
                     <Message
                         loading={message.loading}

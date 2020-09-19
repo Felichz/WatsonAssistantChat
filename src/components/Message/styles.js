@@ -5,9 +5,21 @@ const rightColor = '#197BC9';
 
 export const Container = styled.div`
     display: flex;
-    justify-content: ${({ align }) => align};
+    justify-content: ${({ align }) =>
+        align === 'left' ? 'flex-start' : 'flex-end'};
     align-items: top;
     margin: 10px 20px;
+
+    @media (max-width: 500px) {
+        margin: 0 10px;
+
+        &:first-child {
+            margin-top: 10px;
+        }
+        &:last-child {
+            margin-bottom: 10px;
+        }
+    }
 
     @keyframes appearTransition {
         0% {
@@ -17,7 +29,7 @@ export const Container = styled.div`
             opacity: 1;
         }
     }
-    animation: 250ms ease 0s 1 appearTransition;
+    animation: 500ms ease 0s 1 appearTransition;
 `;
 
 export const ProfileIcon = styled.div`
@@ -68,15 +80,6 @@ export const MessageBox = styled.div`
                       right: -15px;
                       border-right: 15px solid transparent;
                   `};
-
-        @media (max-width: 500px) {
-            display: none;
-        }
-    }
-
-    @media (max-width: 500px) {
-        margin-top: 5px;
-        border-radius: 5px;
     }
 `;
 

@@ -18,9 +18,11 @@ export const MessageInput = ({ onSend, disableInput }) => {
     }
 
     function handleClickSend() {
-        if (inputRef.current) {
-            onSend(inputRef.current.value);
-            inputRef.current.value = '';
+        const input = inputRef.current;
+
+        if (input && input.value) {
+            onSend(input.value);
+            input.value = '';
         }
     }
 
